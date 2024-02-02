@@ -152,7 +152,7 @@ const forgotPassword = async (req, res) => {
     });
     console.log(user.email);
     const mailOptions = {
-      from: "sanjayks8046@gmail.com",
+      from: "narutohinata101999@gmail.com",
       to: user.email,
       subject: "Password Reset",
       html: `
@@ -160,6 +160,7 @@ const forgotPassword = async (req, res) => {
         <p>We received a request to reset your password. Here is your One-Time Password (OTP): <strong>${OTP}</strong></p>
         <p>Please click the following link to reset your password:</p>
         <a href="https://main--chipper-conkies-c7774d.netlify.app/reset-password">Reset Password</a>
+        https://main--chipper-conkies-c7774d.netlify.app/forgot-password
         <p>If you did not make this request, please ignore this email.</p>
         <p>Thank you,</p>
         <p>From Validation</p>
